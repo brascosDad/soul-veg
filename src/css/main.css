@@ -1,0 +1,544 @@
+	/********
+	GENERAL - CONTAINER
+	*********/		
+
+	html {
+		height: 100%;
+	}					
+
+	#container {
+		max-width: 1920px;
+		padding: 15px 0;
+		background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.25) 50%), 
+					linear-gradient(to left, rgba(0,0,0,0.14), transparent 40%),
+					url("../img/IMG-30-1920.jpg");
+					/* adjust gradient percentages in media queries */
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: top left;
+	}
+
+	#main-col {
+		/*display: block;*/
+		/*width: 100%;  adjust width in media queries */
+		/*margin-left: 1%; use this for larger screens */
+		/*margin: 0 auto;*/
+		/*overflow: hidden;*/
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	body {
+		line-height: 1.75;
+
+		}
+
+	a {
+		text-decoration: none;
+		}
+
+	img {
+		width: 100%;
+	}
+
+	h1, h2, h3 {
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	li, .phone-index a {
+		font-size: 2em;
+	}
+
+	nav ul li a, p, a {
+		font-family: 'Open Sans', sans-serif;		
+		font-size: 25px;
+		font-weight: 400;					
+	}
+
+	table {
+		margin: 0 auto;
+	}
+
+	table td {
+		font-family: 'Open Sans', sans-serif;		
+		font-size: 20px;
+		font-weight: 400;
+		text-align: right;
+	}
+
+	td:first-child {
+		text-align: left;
+		padding-right: 10px;
+	}
+
+	/********
+	LOGO
+	********/
+
+	.logo {
+		width: 100%;
+		margin: 0 -50px 0 auto;/*right margin is width of hamburger */
+		/*padding-top: 5%;*/
+		text-align: center;
+
+	}
+
+	.logo img {
+		width: 300px;
+		/*give width values in media queries*/
+		/*padding-left: 5%;  use this for larger screens */
+		/*align: middle;*/
+	}
+
+	/********
+	MAIN CONTENT
+	********/
+
+	.nav-after-logo,
+	.nav-after-logo-menu {
+		display: none;
+	}
+
+	.phone-index  {
+		display: block;
+		width: 50%;
+		background: rgba(226,204,157,0.98);
+		text-align: center;
+		border-radius: 15px;
+		margin: 1.5em auto;
+	}
+
+	#location-index {
+		padding: 1% 0;
+		text-align: center;
+	}
+	
+
+	/********
+	NAVIGATION
+	********/
+
+	nav ul {
+		text-align: center;
+		padding-left: 0;
+		margin: 1.5em auto;
+	}
+	
+
+	/*************
+	SOCIAL MEDIA 
+	*************/
+	
+
+	@font-face {
+    font-family: 'si';
+    src: url('../img/socicon.eot');
+    src: url('../img/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../img/socicon.woff') format('woff'),
+         url('../img/socicon.ttf') format('truetype'),
+         url('../img/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+}
+ 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../img/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    width: 95px; /* width of both icons + margin-right value */
+    margin:0 auto; 
+    margin-bottom: 40%;
+    padding:10% 5% 0 5%;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    text-align: center;
+    /*display:inline;*/
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 37px;
+    height: 37px;
+    line-height: 37px;
+    font-size: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+    /*margin-left: auto;*/
+    color: #191916;
+    background-color: #f5f5f5;
+}
+
+.soc a:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook:before {
+    content:'b';
+}
+
+	/********
+	Footer
+	********/
+
+	
+
+	/********
+	Page: Menu
+	********/
+
+	.phone-menu-col-1 {
+		display: none;
+	}
+
+	.logo-menu {
+		display: none;
+	}
+
+	#location-menu {
+		display: none;
+	}
+
+	.soc-menu {
+		display: none;
+	}
+
+	#container-menu {
+		/*display: block;*/
+		/*position: relative;*/
+		/*margin: 0 auto;*/
+		/*width: 100%;*/
+		/*height: 100%;*/
+		max-width: 1920px;
+		padding: 15px 0;
+		background:	url("../img/resto-side-opt.jpg");
+					/* adjust gradient percentages in media queries */
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+
+	.phone-menu {
+		display: block;
+		width: 160px;
+		text-align: center;
+		margin: 2em auto;
+	}
+
+	.resto-menu-container {
+		margin: 0 1em;
+		padding: 1em;		
+	}
+
+	.resto-menu-nav {
+		margin-top: 0em;
+	}
+
+	.resto-menu-nav li a {
+		font-family: 'Francois One', sans-serif;		
+		text-align: center;	
+		font-size: 30px;
+		font-weight: 400;
+	}
+
+	.menu-group-name, .sub-menu-title {
+		font-family: 'Francois One', sans-serif;		
+		font-size: xx-large;
+		text-align: center;	
+		padding: 5px 0px;
+		border-bottom: 2px solid rgb(70,62,62);
+		
+	}
+
+	.menu-item, .menu-item-price {
+		font-family: 'Francois One', sans-serif;
+		font-size: 18px;
+		margin: .5em 0;
+		display: inline-block;		
+	}
+
+	.menu-item {
+		max-width: 200px;
+	}
+
+	.menu-item-price  {
+		float: right;
+		/*margin: 0 0 0 5px;*/
+	}
+
+	.item-desc {
+		font-family: 'Open Sans', sans-serif;		
+		font-size: 18px;
+		/*float: left;*/
+		max-width: 300px;
+		/*font-style: italic;*/
+		margin: 0;
+	}
+
+	small {
+		font-weight: lighter;
+		font-size: 14px;
+	}
+
+
+	/********
+	Page: Catering
+	********/
+
+	#container-catering {
+		/*display: block;*/
+		/*position: relative;*/
+		/*margin: 0 auto;*/
+		/*width: 100%;*/
+		/*height: 100%;*/
+		max-width: 1920px;
+		padding: 15px 0;
+		background:	url("../img/resto-front2-opt.jpg");
+					/* adjust gradient percentages in media queries */
+		background-attachment: fixed;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+	.cat-menu-desc, .cat-menu-pricing {
+		font-family: 'Francois One', sans-serif;
+		font-size: 18px;
+		margin: .5em 0;
+		/*display: inline-block;*/
+	}
+
+	/********
+	Page: Gallery
+	********/
+
+	#container-gallery {
+		/*display: block;*/
+		/*position: relative;*/
+		/*margin: 0 auto;*/
+		/*width: 100%;*/
+		/*height: 100%;*/
+		max-width: 1920px;
+		padding: 15px 0;
+		background:	url("../img/brick-wall-dark1.gif");
+		background-size: auto 100px;
+		background-attachment: fixed;
+		/*background-repeat: no-repeat;*/
+	}
+
+	#gallery {
+		padding-left: 0;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	#gallery li p {
+		margin-top: 0;
+		line-height: 1.1;
+		text-align: center;
+	}
+
+	#location-gallery,
+	#hours-gallery,
+	.soc-gallery {
+		display: none;
+	}
+
+	/********
+	Page: About
+	********/
+
+	#container-about {
+		/*display: block;*/
+		/*position: relative;*/
+		/*margin: 0 auto;*/
+		/*width: 100%;*/
+		/*height: 100%;*/
+		max-width: 1920px;
+		padding: 15px 0;
+		background-size: cover;
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-position: top left;
+		/*background-repeat: no-repeat;*/
+	}
+
+
+
+	#location-about,
+	#hours-about,
+	.soc-about {
+		display: none;
+	}
+
+	.staff-in {
+		width: 80%;
+		margin: 8% auto;
+		/*overflow: hidden;*/
+	}
+
+	.staff-out {
+		width: 80%;
+		margin: 10% auto;
+		/*overflow: hidden;*/
+	}
+
+	.staff-out {
+		/*margin-top: 2%;*/
+	}
+
+	.about-us {
+		width: 80%;
+		margin: 2% auto;
+		
+	}
+
+	.about-us p,
+	.about-us a {
+		font-size: 17px;
+		padding: 2%;
+	}
+
+	iframe {
+		width: 80%;
+		height: 300px;
+		padding-left: 10%;
+		/*margin: 0 auto;*/
+	}
+
+	/********
+	Colors
+	********/
+
+	h1, h2, h3,
+	li, .phone-index a,
+	nav ul li a, p, a,
+	table td {		
+		color: white;
+	}
+
+	.phone-index a {
+		color: rgb(77,77,68);
+	}
+
+	.phone-menu a{
+		color: black;
+	}
+
+	.resto-menu-nav li a{
+		color: black;
+	}
+
+	.phone-menu  {
+		background: rgba(231,208,160,0.6);
+			}
+
+	.resto-menu-container {
+		background: rgba(255,255,255,0.9);	
+	}
+
+	.resto-menu-nav {
+		border: 1px double rgb(90,90,90);
+	}
+
+	.menu-group-name, .sub-menu-title {
+		color: black;
+		border-bottom: 2px solid rgb(70,62,62);
+		
+	}
+
+	.menu-item,
+	.menu-item-price,
+	.item-desc,
+	.cat-menu-desc,
+	.cat-menu-pricing,
+	.about-us p,
+	.about-us a  {
+		color: black;		
+	}
+
+	small {
+		color: #675014;
+	}
+
+	.about-us {
+		background: rgba(255,255,255,0.88);
+	}
+
+	/* link (see above), visited, hover, active,  */
+
+	a:visited {
+	  color: #ededed;
+	}
+
+	a:hover {
+		color: #ffffcc;
+	}
+
+	.phone-index a:hover {
+	  /*font-size: 110%;*/
+	  color: #fff;
+	}
+	
+	a.active {
+	  color: #FFCC66;
+	}
+
+	
+
+	
+
+	
+
+	
+
+	

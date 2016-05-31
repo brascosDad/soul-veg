@@ -1,0 +1,316 @@
+	/********
+	GENERAL - PAGE CONTAINER
+	*********/							
+
+	#page-container {
+		display: block;
+		margin: 0 auto;
+		max-width: 960px;
+		padding: 1%;
+		background:	url("../img/lion-lamb-lgrey_03.gif")  center / 90%  no-repeat fixed ,
+					/*url("../img/sv-logo-green.gif") 20px 20px / 100px no-repeat fixed,*/
+					url("../img/fabric-4.png");
+		/*background-size: 200px, 100%;*/
+		position: relative;
+	}
+
+	#main-content {
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		background-color: rgba(235,235,235,0.8);
+		
+
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	body {
+		line-height: 1.75;
+		}
+
+	a {
+		text-decoration: none;
+		}
+
+	img {
+		width: 100%;
+	}
+
+	/********
+	HEADER
+	********/
+
+	header {
+		float: left;
+		width: 100%;
+		position: relative;
+	}
+
+	#main-content h1 {
+		/*display: none;*/
+		font-family: 'Ultra', serif;
+		font-size: 2.7em;
+		text-align: center;
+		margin: 0;
+		color: #212f2b;
+	}
+
+	/*#logo img{*/
+		float: left;
+		width: 20%;
+		margin-left: 2.5%;
+		margin-top: 2.5%;
+	}
+
+
+	/********
+	NAVIGATION
+	********/
+
+	nav   {
+	    display: flex;
+	    margin: 2% auto;
+	    width: 70%;
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+		/*margin-top: auto;*/
+	}
+
+	nav ul  {
+		font-family: 'Love Ya Like A Sister', cursive;
+		font-size: 1.5em;
+	    display: flex;
+	    width: 100%;
+	   	flex-direction: row;
+	    justify-content: space-around;
+	    padding: 0;
+	    margin: 0 auto;
+
+	}	
+
+	/********
+	MAIN CONTENT
+	********/
+
+	nav ul li a, #phone-main a {
+	    color: #212f2b;
+	}
+
+	
+
+	.index-photo1 {
+		width: 100%;
+		margin: 0 auto;
+		padding-top: 25%;
+	}
+
+
+	#phone-main {
+		font-family: 'Ultra', serif;
+		font-size: 1.8em;
+		width: 100%;
+		text-align: center;
+		margin: 10px auto;
+	}
+
+	.index-photo2 img{
+		width: 115%;
+		margin-left: -13%;
+		margin-top: -5%;
+	}				
+
+	.hours {
+		font-family: 'Love Ya Like A Sister', cursive;
+		font-size: 1.5em;
+		width: 50%;
+		margin: 20px auto;
+		/*margin-left: calc(25% - (275px/2));  * this essentially places the center of the class on the quarter dividing line ***/
+	}
+
+	table {
+		margin: auto;
+	}
+		
+	td:nth-of-type(2) {
+		padding-left: 10px;
+	}
+
+	#map-embed iframe {
+		display: block;
+		margin: 10px auto;
+	}
+
+	#location p {
+		font-family: 'Love Ya Like A Sister', cursive;
+		font-size: 1.5em;
+		text-align: center;
+	}
+
+	#location p:nth-of-type(2) {
+		margin-bottom: 0;
+	}
+	
+	/********
+	Footer
+	********/
+
+	footer {
+		background: #212f2b;
+	}
+
+
+	footer .row   {
+		font-family: 'Open Sans', sans-serif;
+		font-size: .75em;
+		color: gray;
+	    display: flex;
+	    width: 100%;
+	   	flex-direction: row;
+	    list-style: none;
+	    justify-content: space-between;
+	    padding: 0;
+	    margin: 0 auto;
+	}
+
+	.footer-nav li, .footer-nav li a,
+	.footer-address a p, .fourth-col p,
+	footer a  {
+		color: #cdcdd4 ;
+	}
+
+	.footer-nav, .footer-social, 
+	.footer-address, .fourth-col {
+		padding: 0;
+		margin: 1em 1em;
+	}
+
+	.fourth-col p{
+		padding: 0;
+		margin: 0;
+	}
+
+	/*************
+	SOCIAL MEDIA - IN FOOTER
+	*************/
+	
+
+	@font-face {
+    font-family: 'si';
+    src: url('../img/socicon.eot');
+    src: url('../img/socicon.eot?#iefix') format('embedded-opentype'),
+         url('../img/socicon.woff') format('woff'),
+         url('../img/socicon.ttf') format('truetype'),
+         url('../img/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+ 
+	}
+ 
+	@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(../img/socicon.svg) format(svg);
+    	}
+	}
+
+.soc {
+    /*overflow:hidden;*/
+    margin: 1em auto;
+    padding: 0 .75em;
+    list-style:none;
+}
+
+.soc li {
+    display: flex;
+    *display: flex;
+    margin: 1em auto;
+    zoom:1;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+
+    -o-transition:.1s;
+    -ms-transition:.1s;
+    -moz-transition:.1s;
+    -webkit-transition:.1s;
+    transition:.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 22px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    color: #ffffff;
+    background-color: #c4cdd4;
+}
+
+.soc a:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-twitter:before {
+    content:'a';
+}
+.soc-facebook:before {
+    content:'b';
+}
+
+	/********
+	Page: Menu
+	********/
+
+
+
+
+	/********
+	Page: Catering
+	********/
+
+	/********
+	Page: Gallery
+	********/
+
+	/********
+	Page: About
+	********/
+
+
+	/********
+	Colors
+	********/
+
+	
+
+	
